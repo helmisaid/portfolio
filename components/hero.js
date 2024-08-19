@@ -17,7 +17,7 @@ const Hero = () => {
             >
               <h1 className="font-semibold font-inter text-primary">
                 <span className="text-xl sm:text-2xl">
-                  <span className="underline">Hello World</span> 👋,{" "}
+                  <span className="underline">Hello Woxxrld</span> 👋,{" "}
                 </span>
                 <span className="text-slate-900 sm:text-lg">my name is...</span>
               </h1>
