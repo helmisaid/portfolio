@@ -11,7 +11,7 @@ export const metadata = {
   keywords: ["frontend developer", "web developer", "React developer", "Next.js", "portfolio", "Helmi Said", "Helmi", "Helmi Unair", "Universitas Airlangga"],
   openGraph: {
     title: "Helmi Said | Frontend Developer",
-    description: "Portfolio website of Helmi Said, a Frontend Developer specializing in React and Next.js development.",
+    description: "An undergraduate student at Universitas Airlangga, Passionate on Front-end Developer, Back-end Developer, and UI-UX Designer. This is my Portfolio website, View my projects, skills, and experience.",
     url: "https://helmisaid.site",
     siteName: "Helmi Said Portfolio",
     images: [
