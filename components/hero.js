@@ -16,10 +16,10 @@ const Hero = () => {
               className="w-full self-center px-10 md:w-1/2 mb-4 md:mb-0"
             >
               <h1 className="font-semibold font-inter text-primary">
-                <span className="text-xl sm:text-2xl">
+                <span className="text-xl sm:text-3xl">
                   <span className="underline">Hello World</span> 👋,{" "}
                 </span>
-                <span className="text-slate-900 sm:text-lg">my name is...</span>
+                <span className="text-slate-900 sm:text-xl">my name is...</span>
               </h1>
               <h3 className="font-semibold font-inter my-1 text-slate-900 text-3xl sm:text-4xl md:text-5xl">
                 Helmi Sa&apos;id{" "}
@@ -30,7 +30,7 @@ const Hero = () => {
                 Informatics Engineering & a Software Developer.
               </p>
             </motion.div>
-            <div className="w-full md:w-80 lg:w-96 flex justify-center md:justify-start lg:justify-end md:ml-0 lg:ml-20 px-4 z-10 relative">
+            {/* <div className="w-full md:w-80 lg:w-96 flex justify-center md:justify-start lg:justify-end md:ml-0 lg:ml-20 px-4 z-10 relative">
               <div className="w-full h-full drop-shadow-2xl">
                 <motion.div
                   initial={{ opacity: 0, scale: 0.5 }}
@@ -40,7 +40,7 @@ const Hero = () => {
                   <Image src={Helmi} alt="helmi" layout="responsive" width={700} height={875} objectFit="contain" />
                 </motion.div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
