@@ -11,15 +11,18 @@ export const metadata = {
   keywords: ["frontend developer", "web developer", "React developer", "Next.js", "portfolio", "Helmi Said", "Helmi", "Helmi Unair", "Universitas Airlangga"],
   openGraph: {
     title: "Helmi Said | Frontend Developer",
-    description: "An undergraduate student at Universitas Airlangga, Passionate on Front-end Developer, Back-end Developer, and UI-UX Designer. This is my Portfolio website, View my projects, skills, and experience.",
-    type: "website",
-    locale: "en_US",
-    url: "helmisaid.site",
+    description: "Portfolio website of Helmi Said, a Frontend Developer specializing in React and Next.js development.",
+    url: "https://helmisaid.site",
     siteName: "Helmi Said Portfolio",
-  },
-  robots: {
-    index: true,
-    follow: true,
+    images: [
+      {
+        url: "https://helmisaid.site/og-image.jpg", // Add your OG image
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
   },
 };
 
