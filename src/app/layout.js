@@ -6,12 +6,24 @@ import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Helmi Said | Frontend Developer",
-  description: "An undergraduate student at Universitas Airlangga, Passionate on Front-end Developer, Back-end Developer, and UI-UX Designer. This is my Portfolio website, View my projects, skills, and experience.",
-  keywords: ["frontend developer", "web developer", "React developer", "Next.js", "portfolio", "Helmi Said", "Helmi", "Helmi Unair", "Universitas Airlangga"],
+  title: "Helmi Said | Software Developer",
+  description:
+    "I'm Helmi, passionate on Front-end Developer, Back-end Developer, and UI-UX Designer. This is my Portfolio website, View my projects, skills, and experience.",
+  keywords: [
+    "frontend developer",
+    "web developer",
+    "React developer",
+    "Next.js",
+    "portfolio",
+    "Helmi Said",
+    "Helmi",
+    "Helmi Unair",
+    "Universitas Airlangga",
+  ],
   openGraph: {
     title: "Helmi Said | Frontend Developer",
-    description: "An undergraduate student at Universitas Airlangga, Passionate on Front-end Developer, Back-end Developer, and UI-UX Designer. This is my Portfolio website, View my projects, skills, and experience.",
+    description:
+      "An undergraduate student at Universitas Airlangga, Passionate on Front-end Developer, Back-end Developer, and UI-UX Designer. This is my Portfolio website, View my projects, skills, and experience.",
     url: "https://helmisaid.site",
     siteName: "Helmi Said Portfolio",
     images: [
@@ -28,9 +40,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-      <html className="scroll-smooth" lang="en">
-        <body className={inter.className}>{children}</body>
-      </html>
-    
+    <html className="scroll-smooth" lang="en">
+      <body className={inter.className}>{children}</body>
+    </html>
   );
 }

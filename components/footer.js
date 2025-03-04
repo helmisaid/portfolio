@@ -10,8 +10,10 @@ import {
 } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 
-const SocialIcon = ({ icon: Icon }) => (
-  <Icon className="social-icon hover:text-[#00df9a]" size={30} />
+const SocialIcon = ({ icon: Icon, href }) => (
+  <a href={href} target="_blank" rel="noopener noreferrer">
+    <Icon className="social-icon hover:text-[#00df9a]" size={30} />
+  </a>
 );
 
 const Contact = () => {
@@ -58,10 +60,26 @@ const Contact = () => {
   };
 
   const items = [
-    { type: "icon", icon: FaInstagram },
-    { type: "icon", icon: FaTwitterSquare },
-    { type: "icon", icon: FaGithubSquare },
-    { type: "icon", icon: FaLinkedin },
+    { 
+      type: "icon", 
+      icon: FaInstagram, 
+      href: "https://instagram.com/sdhdyttllh" 
+    },
+    { 
+      type: "icon", 
+      icon: FaTwitterSquare, 
+      href: "https://twitter.com/" 
+    },
+    { 
+      type: "icon", 
+      icon: FaGithubSquare, 
+      href: "https://github.com/helmisaid" 
+    },
+    { 
+      type: "icon", 
+      icon: FaLinkedin, 
+      href: "https://www.linkedin.com/in/helmi-said-hidayatulloh-842629284" 
+    },
   ];
 
   return (
@@ -81,7 +99,7 @@ const Contact = () => {
             <div className="flex justify-between md:w-[75%] my-6">
               {items.map((item, index) =>
                 item.type === "icon" ? (
-                  <SocialIcon key={index} icon={item.icon} />
+                  <SocialIcon key={index} icon={item.icon} href={item.href} />
                 ) : null
               )}
             </div>
