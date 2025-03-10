@@ -106,8 +106,8 @@ const Contact = () => {
     <section id="contact">
       <div className="font-semibold bg-white mx-auto py-16 px-4 relative">
       <GridPattern
-          width={100}
-          height={100}
+          width={50}
+          height={50}
           x={10}
           y={10}
           className={cn(

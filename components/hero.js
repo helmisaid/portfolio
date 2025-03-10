@@ -17,8 +17,8 @@ const Hero = () => {
               className="w-full self-center px-10 md:w-1/2 mb-4 md:mb-0"
             >
               <h1 className="font-semibold font-inter my-1 text-slate-900 text-3xl sm:text-4xl md:text-5xl">
-                Helmi Sa&apos;id{" "}
-                <span className="text-primary">Hidayatulloh</span>
+                HELMI SA&apos;ID{" "}
+                <span className="text-primary">HIDAYATULLOH</span>
               </h1>
               <TypeAnimation
                 sequence={[
