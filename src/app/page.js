@@ -9,9 +9,9 @@ export default function Home() {
   return (
     <>
       {/* <Navbar />
-      <Hero />
       <About />
       <Knowledges /> */}
+      <Hero />
       <Footer />
     </>
   );

@@ -104,19 +104,19 @@ const Contact = () => {
 
   return (
     <section id="contact">
-      <div className="font-semibold bg-white mx-auto py-16 px-4">
-        <GridPattern
-          width={40}
-          height={40}
-          x={-1}
-          y={-1}
+      <div className="font-semibold bg-white mx-auto py-16 px-4 relative">
+      <GridPattern
+          width={100}
+          height={100}
+          x={10}
+          y={10}
           className={cn(
             "[mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)] "
           )}
         />
-        <div className="container grid lg:grid-cols-2 gap-8">
+        <div className="container grid lg:grid-cols-2 gap-8 relative">
           <div className="pr-8 md:pr-56 text-slate-200 pt-20">
-            <h1 className="w-full mb-4 text-3xl lg:text-4xl xl:text-5xl font-bold text-slate-900">
+            <h1 className="w-full mb-4 text-4xl xl:text-5xl font-bold text-slate-900">
               Get in touch.
             </h1>
             <p className="py-4 text-slate-800">
@@ -191,9 +191,9 @@ const Contact = () => {
 
                   <button
                     type="submit"
-                    className="bg-slate-900 hover:bg-slate-600 py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-primary "
-                  >
-                    {loading ? "Sending..." : "Send"}
+                    className="bg-slate-900 hover:bg-slate-600 px-6 py-2 rounded-xl outline-none w-fit text-white font-bold shadow-primary "
+                  >Send
+                    {/* {loading ? "Sending..." : "Send"} */}
                   </button>
                 </form>
               </div>
