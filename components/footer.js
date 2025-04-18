@@ -104,7 +104,7 @@ const Contact = () => {
 
   return (
     <section id="contact">
-      <div className="font-semibold bg-white mx-auto py-16 px-4 relative">
+      <div className="font-semibold bg-gray-50 mx-auto py-16 px-4 relative">
       <GridPattern
           width={50}
           height={50}
@@ -191,7 +191,7 @@ const Contact = () => {
 
                   <button
                     type="submit"
-                    className="bg-slate-900 hover:bg-slate-600 px-6 py-2 rounded-xl outline-none w-fit text-white font-bold shadow-primary "
+                    className="bg-black text-white px-4 py-2 border-solid  font-semibold border-gray-950 rounded-md outline outline-1 hover:outline-gray-900 hover:bg-white hover:text-black hover:delay-200 transition-all duration-200 ease-in-out "
                   >Send
                     {/* {loading ? "Sending..." : "Send"} */}
                   </button>
