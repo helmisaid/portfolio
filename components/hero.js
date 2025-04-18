@@ -1,7 +1,7 @@
-"use client"
-import { motion } from "framer-motion"
-import { TypeAnimation } from "react-type-animation"
-import { Download, FolderKanban } from "lucide-react"
+"use client";
+import { motion } from "framer-motion";
+import { TypeAnimation } from "react-type-animation";
+import { Download, FolderKanban } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -28,29 +28,29 @@ const Hero = () => {
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="flex flex-wrap items-center justify-center">
+        <div className="flex flex-wrap justify-center">
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             transition={{ duration: 1 }}
             animate={{ opacity: 1, x: 0 }}
             className="w-full px-4 md:w-1/2 mb-4 md:mb-0 text-center"
           >
-            <h1 className="font-semibold font-inter my-1 text-slate-900 text-4xl md:text-5xl">
+            <h1 className="font-bold font-inter my-1 text-slate-900 text-[44px] sm:text-5xl">
               HELMI SA&apos;ID <span className="text-primary">HIDAYATULLOH</span>
             </h1>
             <TypeAnimation
-              sequence={["A Front-end Developer", 1000, "A Back-end Developer", 1000, "A UI/UX Designer", 1000]}
+              sequence={["A Front-end Developer", 3000, "A Back-end Developer", 3000, "A UI/UX Designer", 3000]}
               speed={30}
-              style={{ fontSize: "2em" }}
+              style={{ fontSize: "2em", fontWeight: "500" }}
               repeat={Number.POSITIVE_INFINITY}
             />
-            <div className="mt-20 flex justify-center gap-4">
-              <button className="bg-black text-white px-6 py-3 outline outline-1 outline-slate-950 hover:outline-slate-500 hover:-translate-y-1 hover:scale-100 font-semibold rounded-md hover:bg-gray-100 hover:text-black hover:delay-200 transition-all duration-200 ease-in-out shadow-xl flex items-center gap-2">
-                <Download className="w-5 h-5" />
+            <div className="mt-20 flex flex-col sm:flex-row justify-center gap-4">
+            <button className="bg-black text-white px-4 py-3 md:px-4 md:py-2 lg:px-6 lg:py-3 outline outline-1 outline-slate-950 hover:outline-slate-500 hover:-translate-y-1 hover:scale-100 font-semibold rounded-md hover:bg-gray-100 hover:text-black hover:delay-200 transition-all duration-200 ease-in-out shadow-xl flex items-center justify-center gap-2 text-sm lg:text-base whitespace-nowrap">
+                <Download className="w-4 h-4 lg:w-5 lg:h-5" />
                 Download CV
               </button>
-              <button className="bg-gray-100 text-slate-900 px-6 py-3 outline outline-1 outline-slate-300 hover:outline-slate-400 hover:-translate-y-1 hover:scale-100 font-semibold rounded-md hover:bg-white hover:text-black hover:delay-200 transition-all duration-200 ease-in-out shadow-xl flex items-center gap-2">
-                <FolderKanban className="w-5 h-5" />
+              <button className="bg-gray-100 text-slate-900 px-4 py-3 md:px-4 md:py-3 lg:px-6 lg:py-3 outline outline-1 outline-slate-300 hover:outline-slate-400 hover:-translate-y-1 hover:scale-100 font-semibold rounded-md hover:bg-white hover:text-black hover:delay-200 transition-all duration-200 ease-in-out shadow-xl flex items-center justify-center gap-2 text-sm lg:text-base whitespace-nowrap">
+                <FolderKanban className="w-4 h-4 lg:w-5 lg:h-5" />
                 Visit My Project
               </button>
             </div>
@@ -78,7 +78,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
