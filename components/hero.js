@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { Download, FolderKanban } from "lucide-react";
 
+
 const Hero = () => {
   return (
     <section
@@ -12,7 +13,7 @@ const Hero = () => {
       {/* Background blur circles */}
       <div className="absolute inset-0">
         {/* Center circle - moved slightly to the left */}
-        <div className="absolute top-1/2 left-[30%] -translate-x-1/2 -translate-y-1/3 w-[450px] h-[450px] bg-black rounded-full blur-3xl opacity-20"></div>
+        <div className="absolute top-1/2 left-[30%] -translate-x-1/2 -translate-y-1/3 w-[450px] h-[450px] bg-black rounded-full blur-3xl opacity-20"></div> 
 
         {/* Top left circle */}
         <div className="absolute top-[-10%] left-[-5%] w-[350px] h-[350px] bg-black rounded-full blur-3xl opacity-15"></div>
@@ -55,26 +56,6 @@ const Hero = () => {
               </button>
             </div>
           </motion.div>
-
-          {/* Uncomment and adjust if you want to include the image */}
-          {/* <div className="w-full md:w-80 lg:w-96 flex justify-center px-4 z-10 relative">
-            <div className="w-full h-full drop-shadow-2xl">
-              <motion.div
-                initial={{ opacity: 0, scale: 0.5 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5 }}
-              >
-                <Image
-                  src={Helmi || "/placeholder.svg"}
-                  alt="helmi"
-                  layout="responsive"
-                  width={700}
-                  height={875}
-                  objectFit="contain"
-                />
-              </motion.div>
-            </div>
-          </div> */}
         </div>
       </div>
     </section>
